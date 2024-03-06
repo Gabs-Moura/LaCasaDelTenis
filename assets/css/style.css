@@ -1,0 +1,66 @@
+@import url('https://fonts.cdnfonts.com/css/codec-cold');
+@import url('https://fonts.cdnfonts.com/css/codec-warm-trial');
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-5');
+
+body{
+    overflow: hidden;
+}
+
+header::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #E3E4DB;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    display: block;
+    z-index: -10;
+}
+
+h1{
+    color: #000000;
+    font-size: 118px;
+    font-family: 'Codec Cold Trial', sans-serif;
+    font-weight: 800;
+    margin-left: 14.5%;
+    margin-bottom: -6%;
+}
+
+h1.azulado{
+    color:#1098F7;
+}
+
+header{
+    margin-top: 12%;
+}
+
+.botao{
+    top: 665px;
+    left: 190px;
+    color: #02334E;
+    width: 241px;
+    height: auto;
+    position: absolute;
+    font-size: 24px;
+    font-family: 'Codec Cold Trial', sans-serif;
+    font-weight: 800;
+}
+
+.retangulo-azul{
+    background: #1098F7;
+    top: 209px;
+    left: 621px;
+    width: 567px;
+    height: 429px;
+    position: absolute;
+}   
+
+img{
+    top: 166px;
+    left: 658px;
+    width: 573px;
+    height: 435px;
+    position: absolute;
+}
