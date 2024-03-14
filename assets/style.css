@@ -1,0 +1,117 @@
+@import url('https://fonts.cdnfonts.com/css/codec-cold');
+@import url('https://fonts.cdnfonts.com/css/codec-warm-trial');
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-5');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+}
+
+header{
+    min-width: 100%;
+    background-color: #E3E4DB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20%;
+    
+    
+}
+
+
+header .titulos h1{
+    color: #000000;
+    font-size: 118px;
+    font-family: 'Codec Cold Trial', sans-serif;
+    font-weight: 800;
+    margin-left: 12.5%;
+}
+
+header .titulos h1.azulado{
+    color: #1098F7;
+}
+
+header .titulos{
+    display: flex;
+    flex-direction: column;
+}
+
+header .titulos a.botao{
+    color: #02334E;
+    font-size: 24px;
+    font-family: 'Codec Cold Trial', sans-serif;
+    font-weight: 800;
+    text-decoration: none;
+    margin-left: 12.5%;
+    margin-top: 20px;
+    transition: all 0.4s;
+}
+
+header .titulos a.botao:hover{
+    transform: scale3d(1.1,1.1,1.1);
+}
+
+
+header .imagem-tenis img{
+    box-shadow: -30px 30px 2px 5px #1098F7;
+    width: 650px;
+}
+
+section{
+    font-family: "Helvetica" , sans-serif;
+    font-size: 30px;
+    display: flex;
+    min-width: 100%;
+    flex-wrap: wrap;
+}
+
+section .newbalance, .swiss, .puma{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 447.65px;
+    flex-direction: column;
+    align-items: center;
+    gap: 15%;
+}
+
+section .newbalance img, .swiss img, .puma img{
+    width: 400px;
+    
+}
+
+section .newbalance {
+    background-color: #BEC4CB;
+    color: #8FA1C2;
+}
+
+section .swiss{
+    background-color: #FB9F31;
+    color: #011638;
+}
+
+section .puma {
+    background-color: #3D5862;
+    color: #6D889B;
+}
+
+@media  screen and (max-width:1100px){
+    
+    header {
+        flex-direction: column;
+        gap: 10%;
+        
+    }
+}   
+
+
+@media screen and (max-width:1350px) {
+    section .newbalance, .swiss, .puma{
+        width: 100%;
+    }
+}
+
