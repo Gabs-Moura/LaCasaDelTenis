@@ -17,9 +17,8 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20%;
-    
-    
+    gap: 15%;   
+    /*height: 100vh; para funcionar na FIAP*/
 }
 
 
@@ -47,7 +46,7 @@ header .titulos a.botao{
     font-weight: 800;
     text-decoration: none;
     margin-left: 12.5%;
-    margin-top: 20px;
+    margin-top: 10px;
     transition: all 0.4s;
 }
 
@@ -86,31 +85,29 @@ section .newbalance img, .swiss img, .puma img{
 
 section .newbalance {
     background-color: #BEC4CB;
-    color: #8FA1C2;
+    color: #ffffff;
 }
 
 section .swiss{
     background-color: #FB9F31;
-    color: #011638;
+    color: #ffffff;
 }
 
 section .puma {
     background-color: #3D5862;
-    color: #6D889B;
+    color: #ffffff;
 }
 
 @media  screen and (max-width:1100px){
-    
     header {
-        flex-direction: column;
-        gap: 10%;
-        
+        flex-direction: column; /*tirar pra funcionar no pc da FIAP*/  
+        gap: 10%;   /*tirar pra funcionar no pc da FIAP*/
     }
 }   
 
-
 @media screen and (max-width:1350px) {
     section .newbalance, .swiss, .puma{
+        /*width: 33.33%; para funcionar na FIAP*/
         width: 100%;
     }
 }
