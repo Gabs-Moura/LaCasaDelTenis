@@ -2,8 +2,8 @@
 @import url('https://fonts.cdnfonts.com/css/codec-warm-trial');
 @import url('https://fonts.cdnfonts.com/css/helvetica-neue-5');
 
-body{
-    overflow: hidden;
+header{
+    height: 100vh;
 }
 
 header::before{
@@ -64,4 +64,98 @@ img{
     width: 573px;
     height: 435px;
     position: absolute;
+}
+
+#secao-apresentacao{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    padding: 2rem;
+}
+
+.retangulo-marrom{
+    top: 900px;
+    left: 0px;
+    width: 425px;
+    height: 900px;
+    position: absolute;
+    background: #655E4C;
+}
+
+.NB{
+    top: 900px;
+    left: -655px;
+    transform: 'rotate(-35deg)';
+    position: absolute;
+}
+
+.texto-nw{
+    padding: 0%;
+    top: 1542px;
+    color: rgb(0, 0, 0);
+    left: -90px;
+    height: auto;
+    position: absolute;
+    font-size: 48px;
+    font-style: bold;
+    text-align: left;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+.retangulo-laranja{
+    top: 900px;
+    left: 425px;
+    width: 427px;
+    height: 900px;
+    position: absolute;
+    background: #FB9F31;
+}
+
+.SWISS{
+    top: 900px;
+    left: -355px;
+    transform: 'rotate(-35deg)';
+    position: absolute;
+}
+
+.texto-swiss{
+    top: 1542px;
+    left: 300px;
+    color: rgb(0, 0, 0);
+    width: 523px;
+    height: auto;
+    position: absolute;
+    font-size: 48px;
+    font-style: bold;
+    text-align: left;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+.retangulo-vermelho{
+    top: 900px;
+    left: 852px;
+    width: 428px;
+    height: 900px;
+    position: absolute;
+    background: #F07274
+}
+
+.YEEZY{
+    top: 900px;
+    left: 0px;
+    transform: 'rotate(-35deg)';
+    position: absolute;
+}
+
+.texto-yeezy{
+    top: 1542px;
+    right: -300px;
+    color: rgb(0, 0, 0);
+    width: 523px;
+    height: auto;
+    position: absolute;
+    font-size: 48px;
+    font-style: bold;
+    text-align: left;
+    font-family: 'Helvetica Neue', sans-serif;
 }
