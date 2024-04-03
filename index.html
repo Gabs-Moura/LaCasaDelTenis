@@ -6,6 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LaCasaDelTenis</title>
 </head>
+
+<script>
+    function showModal(){
+        var element = document.getElementById("modal");
+        element.classList.add("show-modal");
+    }
+
+    function hideModal(){
+        var element = document.getElementById("modal");
+        element.classList.remove("show-modal");
+    }
+</script>
+
+
 <body>
     <header>
         <div class="titulos">
@@ -24,6 +38,7 @@
         <div class="newbalance">
             <img src="./assets/img/NB.png" alt="">
             <h1>NK DUNK LOW</h1>
+            
         </div>
         <div class="swiss">
             <img src="./assets/img/SWISS.png" alt="">
@@ -34,5 +49,37 @@
             <h1> PUMA RS-X</h1>
         </div>
     </section>
+    <button onclick="showModal()">AVISE-ME</button>
+    <div class="modal" id="modal">
+        <div class="modal_content">
+            <span class="fechar" onclick="hideModal()">&times;</span>
+            <section id="secao-orcamento">
+                <h2>Faça um orçamento</h2>
+        
+                <form action="">
+                    <div class="campo linha">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome">
+                    </div>
+
+                    <div class="campo linha">
+                        <label for="email">E-mail</label>
+                        <input type="text" id="email">
+                    </div>
+        
+                    <div class="campo linha">
+                        <label for="">Gostaria de receber promoções via e-mail?</label>
+                        <input name="prototipo" type="radio" id="sim">
+                        <label for="sim">sim, gostaria</label>
+                        <input name="prototipo" type="radio" id="nao">
+                        <label for="nao">não, vtnc</label>
+                    </div>
+        
+                    <span class="enviar" onclick="hideModal()">ENVIAR</span>
+                </form>
+            </section>
+        </div>
+    </div>
+
 </body>
 </html>
