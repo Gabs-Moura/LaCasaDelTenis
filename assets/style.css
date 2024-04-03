@@ -87,11 +87,11 @@ section .newbalance {
     background-color: #BEC4CB;
     color: #ffffff;
 }
-.newbalance h1{
+.newbalance button, .newbalance h1{
     opacity: 0;
     transition: .7s;
 }
-.newbalance:hover h1{
+.newbalance:hover button, .newbalance:hover h1{
     opacity: 1;
 }
 
@@ -99,11 +99,11 @@ section .swiss{
     background-color: #FB9F31;
     color: #ffffff;
 }
-.swiss h1{
+.swiss h1, .swiss button{
     opacity: 0;
     transition: .7s;
 }
-.swiss:hover h1{
+.swiss:hover h1, .swiss:hover button{
     opacity: 1;
 }
 
@@ -111,11 +111,11 @@ section .puma {
     background-color: #3D5862;
     color: #ffffff;
 }
-.puma h1{
+.puma h1, .puma button{
     opacity: 0;
     transition: opacity .7s;
 }
-.puma:hover h1 {
+.puma:hover h1, .puma:hover button {
     opacity: 1;
 }
 
@@ -131,6 +131,11 @@ section .puma {
         width: 33.33%; /*para funcionar na FIAP*/
         /*width: 100%;*/
     }
+}
+
+button{
+    width: 100px;
+    appearance: none;
 }
 
 .modal{
@@ -153,7 +158,7 @@ section .puma {
 
 .modal_content{
     background-color: white;
-    padding: 16px 24px;
+    padding: 56px 64px;
     width: 384px;
     border-radius: 0.5rem;
 }
@@ -183,4 +188,56 @@ span:hover{
     opacity: 1;
     visibility: visible;
     transform: scale(1.0);
+}
+
+#secao-notificacao{
+    font-family: "Helvetica" , sans-serif;
+}
+
+#secao-notificacao h1{
+    padding: 1%;
+    font-size: 20px;
+}
+
+input[type=text],
+input[type=number],
+select{
+    background-color: #bac1c4;
+    color: white;
+    border-radius: .25rem;
+    border: 0;
+    padding: .5rem;
+}
+
+.campo{
+    display: flex;
+    flex-direction: column;
+}
+
+#secao-notificacao form{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2,1fr);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#campo_promocao{
+    grid-column: 1 / 3;
+}
+
+input[type=checkbox]{
+    accent-color: rgb(101, 206, 127);
+}
+
+#botao-avise{
+    color: #02334E;
+    font-size: 20px;
+    font-family: 'Codec Cold Trial', sans-serif;
+    text-decoration: none;
+    transition: all 0.4s;
+}
+
+#botao-avise:hover{
+    transform: scale3d(1.1,1.1,1.1);
 }

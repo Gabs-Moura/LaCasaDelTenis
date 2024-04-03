@@ -38,23 +38,26 @@
         <div class="newbalance">
             <img src="./assets/img/NB.png" alt="">
             <h1>NK DUNK LOW</h1>
-            
+            <button id="botao-avise" onclick="showModal()">AVISE-ME</button>
         </div>
         <div class="swiss">
             <img src="./assets/img/SWISS.png" alt="">
             <h1>CR - TERRATI</h1>
+            <button id="botao-avise" onclick="showModal()">AVISE-ME</button>
         </div>
         <div class="puma">
             <img src="./assets/img/Puma.png" alt="">
             <h1> PUMA RS-X</h1>
+            <button id="botao-avise" onclick="showModal()">AVISE-ME</button>
         </div>
     </section>
-    <button onclick="showModal()">AVISE-ME</button>
+   
     <div class="modal" id="modal">
         <div class="modal_content">
             <span class="fechar" onclick="hideModal()">&times;</span>
-            <section id="secao-orcamento">
-                <h2>Faça um orçamento</h2>
+            <section id="secao-notificacao">
+                <h2>NOTIFICAÇÃO</h2>
+                <h1>você será avisado assim que este tênis chegar em nossa loja! </h1>
         
                 <form action="">
                     <div class="campo linha">
@@ -67,7 +70,7 @@
                         <input type="text" id="email">
                     </div>
         
-                    <div class="campo linha">
+                    <div id="campo_promocao" class="campo linha">
                         <label for="">Gostaria de receber promoções via e-mail?</label>
                         <input name="prototipo" type="radio" id="sim">
                         <label for="sim">sim, gostaria</label>
